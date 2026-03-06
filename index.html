@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="पंडित महेश गोदियाल जी - सहारनपुर के अनुभवी पुजारी और ज्योतिषी। गृह प्रवेश, विवाह, कथा, हवन, वास्तु पूजा और सभी हिंदू संस्कार।">
+    <meta name="keywords" content="pandit in saharanpur, pujari saharanpur, griha pravesh puja, satyanarayan katha, marriage puja, vastu puja, havan puja, astrologer saharanpur">
+    <title>पंडित महेश गोदियाल जी | Pandit in Saharanpur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-orange: #FF6B35;
+            --dark-navy: #1A1A2E;
+            --gold: #D4AF37;
+            --light-bg: #FFF8F3;
+            --text-dark: #2C2C2C;
+            --text-light: #666;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: white;
+            overflow-x: hidden;
+        }
+        
+        /* Floating Profile Photo */
+        .floating-profile {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--primary-orange);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+            z-index: 999;
+            transition: all 0.3s;
+            background: white;
+        }
+        
+        .floating-profile:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.6);
+        }
+        
+        .floating-profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Floating Profile - REMOVED */
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            z-index: 998;
+            transition: all 0.3s;
+        }
+        
+        nav.scrolled {
+            box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+            font-weight: 700;
+            color: var(--primary-orange);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary-orange);
+        }
+        
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-orange);
+            transition: width 0.3s;
+        }
+        
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-orange);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, var(--light-bg) 0%, #FFF 100%);
+            display: flex;
+            align-items: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '🕉️';
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            font-size: 15rem;
+            opacity: 0.03;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .hero::after {
+            content: '🪔';
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            font-size: 10rem;
+            opacity: 0.03;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero-text {
+            z-index: 2;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-orange), var(--gold));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: var(--dark-navy);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            color: var(--primary-orange);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary, .btn-secondary {
+            padding: 14px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-orange), var(--gold));
+            color: white;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
+        }
+        
+        .btn-primary .whatsapp-icon {
+            background: white;
+            border-radius: 50%;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-primary .whatsapp-icon svg {
+            fill: #25D366;
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--primary-orange);
+            border: 2px solid var(--primary-orange);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-orange);
+            color: white;
+        }
+        
+        .hero-image {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(135deg, transparent, rgba(255, 107, 53, 0.1));
+            animation: rotate 20s linear infinite;
+            pointer-events: none;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+        
+        @keyframes rotate {
+            100% { transform: rotate(360deg); }
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 20px;
+            background: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-badge {
+            display: inline-block;
+            color: var(--primary-orange);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--dark-navy);
+            margin-bottom: 15px;
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .about-card {
+            text-align: center;
+            padding: 40px 30px;
+            background: var(--light-bg);
+            border-radius: 15px;
+            transition: all 0.3s;
+        }
+        
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        .about-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-card h3 {
+            font-size: 1.4rem;
+            color: var(--dark-navy);
+            margin-bottom: 10px;
+        }
+        
+        .about-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, var(--light-bg) 0%, #FFF 100%);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-left: 4px solid var(--primary-orange);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 45px rgba(255, 107, 53, 0.15);
+        }
+        
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--dark-navy);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-card ul {
+            list-style: none;
+        }
+        
+        .service-card li {
+            padding: 10px 0;
+            color: var(--text-light);
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .service-card li::before {
+            content: '✦';
+            color: var(--primary-orange);
+            font-size: 1.2rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 20px;
+            background: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .contact-card {
+            background: var(--light-bg);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .contact-card:hover {
+            background: linear-gradient(135deg, var(--primary-orange), var(--gold));
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-card:hover h3,
+        .contact-card:hover p {
+            color: white;
+        }
+        
+        .whatsapp-card {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+        
+        .whatsapp-card h3,
+        .whatsapp-card p,
+        .whatsapp-card a {
+            color: white;
+        }
+        
+        .whatsapp-card:hover {
+            background: linear-gradient(135deg, #128C7E, #075E54);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-navy);
+            color: white;
+            padding: 60px 20px 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-profile {
+            margin-bottom: 50px;
+        }
+        
+        .footer-profile-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .footer-profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid var(--gold);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .footer-profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.5);
+        }
+        
+        .footer-profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .footer-profile-text {
+            text-align: center;
+        }
+        
+        .footer-note {
+            background: rgba(255, 107, 53, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--primary-orange);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-orange);
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-image {
+                order: -1;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 70%;
+                height: calc(100vh - 70px);
+                background: white;
+                flex-direction: column;
+                padding: 30px;
+                box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+                transition: right 0.3s;
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+            
+            .menu-toggle {
+                display: block;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .floating-profile {
+                width: 60px;
+                height: 60px;
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .services-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Profile Photo -->
+    <div class="floating-profile">
+        <img src="https://i.ibb.co/b5kzBNB1/Pandit-Mahesh-Godiyal.jpg" alt="Pandit Ji">
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🕉️ पं. महेश गोदियाल</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">🕉️ श्री गणेशाय नम:</div>
+                <h1>पंडित महेश गोदियाल जी</h1>
+                <div class="hero-subtitle">शिव शक्ति ज्योतिष केन्द्र</div>
+                <p class="hero-mantra" style="color: var(--primary-orange); font-weight: 600;">जय बद्रीकेदार | जय कल्यावीर</p>
+                <p>Experienced Vedic Pandit and Astrologer in Saharanpur providing traditional Hindu rituals, pujas, and astrological consultations with complete dedication and expertise.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/918279452995?text=नमस्ते%20पंडित%20जी" class="btn-primary" target="_blank">
+                        <span class="whatsapp-icon">
+                            <svg width="16" height="16" viewBox="0 0 48 48">
+                                <path d="M24 0C10.745 0 0 10.745 0 24c0 4.243 1.107 8.228 3.042 11.678L0 48l12.56-3.002A23.877 23.877 0 0024 48c13.255 0 24-10.745 24-24S37.255 0 24 0zm11.47 33.88c-.478 1.348-2.363 2.467-3.868 2.797-.998.218-2.297.393-6.67-1.432-5.593-2.335-9.207-7.99-9.487-8.357-.28-.368-2.277-3.028-2.277-5.775s1.44-4.098 1.95-4.66c.51-.562 1.113-.703 1.485-.703.372 0 .744.007 1.07.02.343.015.803-.13 1.256 1.197.478 1.395 1.632 3.98 1.775 4.27.143.29.24.628.048.997-.192.368-.288.598-.575.92-.288.322-.605.718-.863.964-.288.272-.587.566-.252 1.112.335.546 1.49 2.457 3.197 3.98 2.197 1.96 4.048 2.568 4.622 2.856.575.287.91.24 1.245-.144.335-.383 1.44-1.68 1.825-2.256.383-.575.767-.48 1.293-.287.527.192 3.342 1.577 3.917 1.864.575.287.958.43 1.1.67.144.24.144 1.393-.335 2.74z"/>
+                            </svg>
+                        </span>
+                        WhatsApp Now
+                    </a>
+                    <a href="tel:+918279452995" class="btn-secondary">
+                        📞 Call Now
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="https://i.ibb.co/3yzrrTHs/Lord-Shiva-Mahesh-Godiyal.jpg" alt="Lord Shiva Temple">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">About Us</div>
+                <h2 class="section-title">हमारे बारे में</h2>
+                <p class="section-description">Traditional Vedic rituals and astrological services with complete devotion and authenticity</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🔱</div>
+                    <h3>Vedic Expertise</h3>
+                    <p>सभी धार्मिक अनुष्ठान विशेष वैदिक पद्धति द्वारा सम्पन्न कराये जाते हैं</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">📿</div>
+                    <h3>Experienced Pandit</h3>
+                    <p>Years of experience in performing all Hindu rituals and ceremonies</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">⭐</div>
+                    <h3>Trusted Service</h3>
+                    <p>Serving Saharanpur and nearby areas with dedication</p>
+                </div>
+            </div>
+            
+            <div class="about-card" style="margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <div class="about-icon">🙏</div>
+                <h3>पं. श्री जगदीश प्रसाद गोदियाल जी</h3>
+                <p style="font-size: 1.1rem; color: var(--primary-orange); font-weight: 600;">पीठाधीश्वर - सिद्धपीठ श्री विश्वकर्मा मन्दिर</p>
+                <p>प्रतापनगर, रायवाला, सहारनपुर (उ.प्र.)</p>
+                <p style="font-size: 1.2rem; font-weight: 600; color: var(--dark-navy); margin-top: 10px;">📞 9675521280</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Services</div>
+                <h2 class="section-title">हमारी सेवाएं</h2>
+                <p class="section-description">Complete range of Hindu rituals and astrological services</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🪔 पूजा पाठ एवं संस्कार</h3>
+                    <ul>
+                        <li>हवन, कथा, पूजा पाठ</li>
+                        <li>जप, यज्ञ अनुष्ठान</li>
+                        <li>शादी विवाह, जन्मदिन पूजन</li>
+                        <li>मुंडन संस्कार</li>
+                        <li>सत्यनारायण कथा</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🌟 ग्रह शांति एवं दोष निवारण</h3>
+                    <ul>
+                        <li>नवग्रह शान्ति</li>
+                        <li>मंगल दोष शान्ति</li>
+                        <li>कालसर्प दोष निवारण</li>
+                        <li>नागबली</li>
+                        <li>कुम्भविवाह</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🏡 गृह एवं वास्तु पूजन</h3>
+                    <ul>
+                        <li>वास्तु शान्ति</li>
+                        <li>वास्तु पूजन</li>
+                        <li>भूमि पूजन</li>
+                        <li>ग्रह प्रवेश</li>
+                        <li>दुकान का मुहुर्त</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>📖 विशेष पाठ एवं अनुष्ठान</h3>
+                    <ul>
+                        <li>माँ बगलामुखी जप</li>
+                        <li>अखण्ड रामायण</li>
+                        <li>सुन्दर काण्ड</li>
+                        <li>शतचण्डी</li>
+                        <li>रुद्राभिषेक</li>
+                        <li>रुद्रि पाठ</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🙏 पाठ एवं जप</h3>
+                    <ul>
+                        <li>दुर्गा सप्तसती पाठ</li>
+                        <li>गरुड पाठ</li>
+                        <li>महामृत्युंजय जप</li>
+                        <li>गायत्री पाठ</li>
+                        <li>भागवत मूल पाठ</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🕯️ पितृ कर्म एवं श्राद्ध</h3>
+                    <ul>
+                        <li>पितृ गायत्री</li>
+                        <li>नारायण बली</li>
+                        <li>त्रिपिंडी श्राद्ध</li>
+                        <li>तीर्थ श्राद्ध</li>
+                        <li>पितृ कर्मादि</li>
+                        <li>पंचक शान्ति</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>⭐ ज्योतिष सेवाएं</h3>
+                    <ul>
+                        <li>जन्म पत्री दिखाना</li>
+                        <li>जन्म पत्री बनवाना</li>
+                        <li>कुण्डली मिलान</li>
+                        <li>अभिमंत्रित यंत्र</li>
+                        <li>रत्न और रुद्राक्ष</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>✨ अन्य सेवाएं</h3>
+                    <ul>
+                        <li>मूर्ति प्राण प्रतिष्ठा</li>
+                        <li>नमक चमक</li>
+                        <li>विशेष वैदिक अनुष्ठान</li>
+                        <li>घर और मंदिर में पूजा</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Contact Us</div>
+                <h2 class="section-title">संपर्क करें</h2>
+                <p class="section-description">Get in touch for puja bookings and consultations</p>
+            </div>
+            <div class="contact-grid">
+				<a href="tel:+918279452995" class="contact-card" style="text-decoration:none; color:inherit; display:block;">
+					<div class="contact-icon">📞</div>
+					<h3>Phone</h3>
+					<p>8279452995</p>
+				</a>
+				<a href="https://wa.me/918279452995" class="contact-card whatsapp-card" style="text-decoration:none; color:inherit; display:block;" target="_blank">
+					<div class="contact-icon">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="white">
+							<path d="M24 0C10.745 0 0 10.745 0 24c0 4.243 1.107 8.228 3.042 11.678L0 48l12.56-3.002A23.877 23.877 0 0024 48c13.255 0 24-10.745 24-24S37.255 0 24 0zm11.47 33.88c-.478 1.348-2.363 2.467-3.868 2.797-.998.218-2.297.393-6.67-1.432-5.593-2.335-9.207-7.99-9.487-8.357-.28-.368-2.277-3.028-2.277-5.775s1.44-4.098 1.95-4.66c.51-.562 1.113-.703 1.485-.703.372 0 .744.007 1.07.02.343.015.803-.13 1.256 1.197.478 1.395 1.632 3.98 1.775 4.27.143.29.24.628.048.997-.192.368-.288.598-.575.92-.288.322-.605.718-.863.964-.288.272-.587.566-.252 1.112.335.546 1.49 2.457 3.197 3.98 2.197 1.96 4.048 2.568 4.622 2.856.575.287.91.24 1.245-.144.335-.383 1.44-1.68 1.825-2.256.383-.575.767-.48 1.293-.287.527.192 3.342 1.577 3.917 1.864.575.287.958.43 1.1.67.144.24.144 1.393-.335 2.74z"/>
+						</svg>
+					</div>
+					<h3>WhatsApp</h3>
+					<p>8279452995</p>
+				</a>                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Address</h3>
+                    <p>Shree Vishwakarma Mandir<br>Pratap Nagar, Saharanpur<br>247001, Uttar Pradesh</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://wa.me/918279452995?text=नमस्ते%20पंडित%20जी,%20मुझे%20पूजा%20के%20बारे%20में%20जानकारी%20चाहिए" class="btn-primary" target="_blank">
+                    <span class="whatsapp-icon">
+                        <svg width="16" height="16" viewBox="0 0 48 48">
+                            <path d="M24 0C10.745 0 0 10.745 0 24c0 4.243 1.107 8.228 3.042 11.678L0 48l12.56-3.002A23.877 23.877 0 0024 48c13.255 0 24-10.745 24-24S37.255 0 24 0zm11.47 33.88c-.478 1.348-2.363 2.467-3.868 2.797-.998.218-2.297.393-6.67-1.432-5.593-2.335-9.207-7.99-9.487-8.357-.28-.368-2.277-3.028-2.277-5.775s1.44-4.098 1.95-4.66c.51-.562 1.113-.703 1.485-.703.372 0 .744.007 1.07.02.343.015.803-.13 1.256 1.197.478 1.395 1.632 3.98 1.775 4.27.143.29.24.628.048.997-.192.368-.288.598-.575.92-.288.322-.605.718-.863.964-.288.272-.587.566-.252 1.112.335.546 1.49 2.457 3.197 3.98 2.197 1.96 4.048 2.568 4.622 2.856.575.287.91.24 1.245-.144.335-.383 1.44-1.68 1.825-2.256.383-.575.767-.48 1.293-.287.527.192 3.342 1.577 3.917 1.864.575.287.958.43 1.1.67.144.24.144 1.393-.335 2.74z"/>
+                        </svg>
+                    </span>
+                    WhatsApp पर संपर्क करें
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Footer Profile Section -->
+            <div class="footer-profile">
+                <div class="footer-profile-wrapper">
+                    <div class="footer-profile-image">
+                        <img src="https://i.ibb.co/W4LpXWV2/Pandit-Mahesh-Godiyal.jpg" alt="Pandit Mahesh Godiyal Ji">
+                    </div>
+                    <div class="footer-profile-text">
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 10px; color: var(--gold);">🕉️ पंडित महेश गोदियाल जी</h3>
+                        <p style="font-size: 1.2rem; color: var(--primary-orange); margin-bottom: 15px;">शिव शक्ति ज्योतिष केन्द्र, सहारनपुर</p>
+                        <p style="font-size: 1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; line-height: 1.7;">
+                            Experienced Vedic Pandit and Astrologer serving Saharanpur with dedication and complete devotion to traditional Hindu rituals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-note">
+                <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">⚠️ महत्वपूर्ण सूचना</p>
+                <p>मिलने से पहले फोन पर समय अवश्य लें। | Please call before visiting.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p style="margin-top: 20px; opacity: 0.8;">&copy; 2024 पंडित महेश गोदियाल जी | शिव शक्ति ज्योतिष केन्द्र</p>
+            <p style="opacity: 0.6; font-size: 0.9rem;">All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hero Image Upload
+        const heroImageClick = document.getElementById('heroImageClick');
+        const heroImageUpload = document.getElementById('heroImageUpload');
+        
+        if (heroImageClick && heroImageUpload) {
+            heroImageClick.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Hero image clicked');
+                heroImageUpload.click();
+            });
+
+            heroImageUpload.addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                console.log('File selected:', file);
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(event) {
+                        const img = document.getElementById('heroImage');
+                        const placeholder = document.getElementById('heroImagePlaceholder');
+                        if (img && placeholder) {
+                            img.src = event.target.result;
+                            img.style.display = 'block';
+                            placeholder.style.display = 'none';
+                            localStorage.setItem('heroImage', event.target.result);
+                            console.log('Hero image uploaded successfully');
+                        }
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+
+        // Profile Photo Upload (Floating)
+        document.getElementById('profileUpload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = document.getElementById('profileImage');
+                    img.src = event.target.result;
+                    img.style.display = 'block';
+                    document.getElementById('profilePlaceholder').style.display = 'none';
+                    localStorage.setItem('profilePhoto', event.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Footer Photo Upload - Click handler
+        document.getElementById('footerProfileClick').addEventListener('click', function() {
+            document.getElementById('footerPhotoUpload').click();
+        });
+
+        // Footer Photo Upload - File change handler
+        document.getElementById('footerPhotoUpload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = document.getElementById('footerImage');
+                    img.src = event.target.result;
+                    img.style.display = 'block';
+                    document.getElementById('footerPlaceholder').style.display = 'none';
+                    localStorage.setItem('footerPhoto', event.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Load saved photos on page load
+        window.addEventListener('load', function() {
+            // Load hero image
+            const savedHeroImage = localStorage.getItem('heroImage');
+            if (savedHeroImage) {
+                const img = document.getElementById('heroImage');
+                const placeholder = document.getElementById('heroImagePlaceholder');
+                if (img && placeholder) {
+                    img.src = savedHeroImage;
+                    img.style.display = 'block';
+                    placeholder.style.display = 'none';
+                }
+            }
+            
+            // Load floating profile photo
+            const savedPhoto = localStorage.getItem('profilePhoto');
+            if (savedPhoto) {
+                const img = document.getElementById('profileImage');
+                img.src = savedPhoto;
+                img.style.display = 'block';
+                document.getElementById('profilePlaceholder').style.display = 'none';
+            }
+            
+            // Load footer photo
+            const savedFooterPhoto = localStorage.getItem('footerPhoto');
+            if (savedFooterPhoto) {
+                const img = document.getElementById('footerImage');
+                img.src = savedFooterPhoto;
+                img.style.display = 'block';
+                document.getElementById('footerPlaceholder').style.display = 'none';
+            }
+        });
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+
+        function closeMenu() {
+            document.getElementById('navMenu').classList.remove('active');
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll with offset for fixed navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
